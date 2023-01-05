@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>Pickup Line Generator</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+			padding: 30px;
+			background-color: #111;
+			color: #fff;
+		}
+		h1 {
+			margin-bottom: 30px;
+		}
+		button[type="button"] {
+			font-size: 16px;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		button[type="button"]:hover {
+			background-color: #444;
+		}
+		#pickup-line {
+			font-size: 20px;
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Pickup Line Generator</h1>
+	<button type="button" onclick="generatePickupLine()">Generate Pickup Line</button>
+	<p id="pickup-line"></p>
+	<script>
+		function generatePickupLine() {
+			var pickupLines = [
+				"Are you a camera? Because every time I look at you, I smile.",
+				"Do you have a Band-Aid? Because I just fell for you.",
+				"Do you have a map? Because I just got lost in your eyes.",
+				"Do you have a sunburn, or are you always this hot?",
+				"Do you mind if we share a cab home? My parents always told me to follow my dreams.",
+				"Do you mind if we walk home? My mother always told me to follow my dreams.",
+				"Do you mind if we share a cab home? My parents always told me to follow my heart.",
+				"Do you mind if we walk home? My mother always told me to follow my heart.",
+				"Do you want to dance or should I walk by again?",
+				"Do you want to come over and watch Netflix and not have sex?",
+				"Excuse me, but I think you dropped something: my jaw.",
+				"Do you have a twin sister? Because you're a 10 and I'd like to meet your identical.",
+				"Do you have a Band-Aid? Because I just fell for you hard.",
+				"Do you have a map? Because I just keep getting lost in your eyes.",
+				"Do you mind if we share a cab home? My parents always told me to follow my heart, and it's leading me to you.",
+				"Do you mind if we walk home? My mother always told me to follow my heart, and it's leading me straight to you.",
+				"Do you have a library card, because I am checking you out.",
+				"Do you mind if we share a cab home? My parents always told me to follow my dreams, and you're a dream come true.",
+				"Do you mind if we walk home? My mother always told me to follow my dreams, and you're the dream I've been waiting for.",
+				"Do you have a sparkler? Because you're dazzling.",
+				"Do you mind if we share a cab home? My parents always told me to follow my instincts, and they're telling me that you're the one.",
+				"Do you mind if we walk home? My mother always told me to follow my instincts, and they're telling me that you're the one for me.",
+				"Do you have a time machine? Because I see you in my future.",
+				"Do you mind if we share a cab home? My parents always told me to go after what I want, and I want you.",
+				"Do you mind if we walk home? My mother always told me to go after what I want, and I want you.",
+				"Do you have a sweater? Because you're looking extra warm today.",
+				"Do you mind if we share a cab home? My parents always told me to chase my dreams, and you're my dream come true.",
+				"Do you mind if we walk home? My mother always told me to chase my dreams, and you're the dream I've been chasing.",
+				"Do you have a lucky rabbit's foot? Because you're a lucky charm.",
+				"Do you mind if we share a cab home? My parents always told me to follow my heart, and it's leading me straight to you.",
+				"Do you mind if we walk home? My mother always told me to follow my heart, and it's leading me straight to you."
+			];
+			var pickupLine = pickupLines[Math.floor(Math.random() * pickupLines.length)];
+			document.getElementById("pickup-line").innerHTML = pickupLine;
+		}
+	</script>
+			
+</body>
+</html>
